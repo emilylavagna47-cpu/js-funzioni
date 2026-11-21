@@ -15,7 +15,10 @@
 */
 
 // # La funzione
-
+function calcolaDollariRicevuti (importoEuro, tassoDiCambio, commissione){
+  if (importoEuro  <= commissione) return 0;
+  return (importoEuro - commissione) * tassoDiCambio;
+}
 
 // # Le prove: una riga di console.log per ogni caso di "Come verifichi"
 
